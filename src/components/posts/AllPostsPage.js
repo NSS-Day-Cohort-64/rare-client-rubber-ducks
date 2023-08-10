@@ -4,7 +4,9 @@ export const AllPostsPage = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8088/Posts")
+        fetch("http://localhost:8088/posts")
+            .then(response => response.json())
+            .then(data => setPosts(data))
     }, []);
 
     return (
@@ -14,8 +16,9 @@ export const AllPostsPage = () => {
                 {posts.map((post) => (
                     <section className="post" key={`post--${post.id}`}>
                         <header>{post.title}</header>
-                        <l1>{post.author_name}</l1>
-                        <l1>{post.category}</l1>
+                        <div>{post.user.first_name}</div>
+                        <div>{post.user.last_name}</div>
+                        <div>{post.category}</div>
                     </section>
                 ))}
             </article>
