@@ -1,0 +1,87 @@
+.Tags {
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+}
+
+.tag {
+  display: flex;
+  flex-direction: row; /* Display tag label and buttons horizontally */
+  align-items: center; /* Align items vertically within .tag */
+  margin-bottom: 10px; /* Add some space between each tag */
+}
+
+.tag ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons {
+  margin-left: auto; /* Push buttons to the right side */
+}
+
+/* Add any additional styling for edit and delete buttons */
+.edit-button,
+.delete-button {
+  margin-left: 10px; /* Add some space between buttons */
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust the gap between categories */
+}
+
+/* .category {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+}
+
+.category-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #0056b3;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+} */
