@@ -1,13 +1,18 @@
 .Tags {
   display: flex;
-  flex-direction: column; /* Display items vertically */
+  flex-direction: column;
 }
 
 .tag {
   display: flex;
-  flex-direction: row; /* Display tag label and buttons horizontally */
-  align-items: center; /* Align items vertically within .tag */
-  margin-bottom: 10px; /* Add some space between each tag */
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .tag ul {
@@ -17,17 +22,65 @@
 }
 
 .buttons {
-  margin-left: auto; /* Push buttons to the right side */
+  margin-left: auto;
 }
 
-/* Add any additional styling for edit and delete buttons */
 .edit-button,
 .delete-button {
-  margin-left: 10px; /* Add some space between buttons */
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.categories {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* Adjust the gap between categories */
+.edit-button {
+  background-color: orange;
+  color: white;
 }
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+.add-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover,
+.edit-button:hover,
+.delete-button:hover {
+  background-color: darkgreen;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+h2 {
+  color: green;
+}
+
+.Tags-Content {
+  margin-top: 20px;
+}
+
+/* Add any other styles you may need */

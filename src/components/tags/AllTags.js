@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import "./AllTags.css"
 
 export const AllTags = () => {
     const [tags, setTags] = useState([])

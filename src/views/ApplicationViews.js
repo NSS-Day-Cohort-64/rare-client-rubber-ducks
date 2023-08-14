@@ -9,7 +9,6 @@ import { UserPostsPage } from "../components/userPosts/UserPostsPage"
 
 export const ApplicationViews = ({ token, setToken }) => {
   return <>
-    <h1>hello</h1>
     <Routes>
       <Route path="/login" element={<Login setToken={setToken} />}  />
       <Route path="/register" element={<Register setToken={setToken} />}  />
