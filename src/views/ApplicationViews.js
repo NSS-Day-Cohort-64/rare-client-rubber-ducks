@@ -6,8 +6,6 @@ import { AllTags } from "../components/tags/AllTags"
 import { AllPostsPage } from "../components/posts/AllPostsPage"
 import { AllCategories } from "../components/categories/AllCategories"
 import { UserPostsPage } from "../components/userPosts/UserPostsPage"
-import { AllTags } from "../components/tags/AllTags"
-
 
 export const ApplicationViews = ({ token, setToken }) => {
   return <>
