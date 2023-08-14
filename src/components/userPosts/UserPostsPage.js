@@ -29,17 +29,6 @@ export const UserPostsPage = () => {
                     ))}
                 </div>
             </div>
-            {/* <h2>My Posts</h2>
-            <article className="Posts">
-                {posts.map((post) => (
-                    <section className="post" key={`post--${post.id}`}>
-                        <header>{post.title}</header>
-                        <div>{post.user.first_name}</div>
-                        <div>{post.user.last_name}</div>
-                        <div>{post.category}</div>
-                    </section>
-                ))}
-            </article> */}
         </>
     );
 };
