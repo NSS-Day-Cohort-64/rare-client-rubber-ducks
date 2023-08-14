@@ -17,8 +17,9 @@ export const Login = ({ setToken }) => {
     }
 
     loginUser(user).then(res => {
-      if ("valid" in res && res.valid) {
-        setToken(res.token)
+      const parsed = JSON.parse(res)
+      if ("valid" in parsed && parsed.valid) {
+        setToken(parsed.token)
         navigate("/posts")
       }
       else {
