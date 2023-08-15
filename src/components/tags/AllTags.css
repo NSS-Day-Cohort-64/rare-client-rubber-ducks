@@ -1,33 +1,123 @@
-.Tags {
+/* Container Styles */
+.container {
   display: flex;
-  flex-direction: column; /* Display items vertically */
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 800px;
 }
 
-.tag {
-  display: flex;
-  flex-direction: row; /* Display tag label and buttons horizontally */
-  align-items: center; /* Align items vertically within .tag */
-  margin-bottom: 10px; /* Add some space between each tag */
+/* Heading Styles */
+.pageTitle {
+  color: #2c3e50;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.tag ul {
-  list-style: none;
+.mytag-content .tags {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+/* Tags Content Styles */
+.mytag-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Tag Styles */
+.mytag {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.mytag-label:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mytag-label {
+  width: 300px;
   margin: 0;
-  padding: 0;
+  padding: 5px;
+  font-size: 24px;
+  color: #2980b9;
+  background-color: #ecf0f1;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.buttons {
-  margin-left: auto; /* Push buttons to the right side */
+/* Buttons Container Styles */
+.tags .buttons {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Add any additional styling for edit and delete buttons */
-.edit-button,
-.delete-button {
-  margin-left: 10px; /* Add some space between buttons */
+/* Button Styles */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: none;
 }
 
-.categories {
+.button.edit-button {
+  background-color: #27ae60;
+  color: white;
+}
+
+.button.delete-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.button.add-button {
+  background-color: #f39c12;
+  color: white;
+}
+
+.button:hover {
+  background-color: #34495e;
+}
+
+/* Form Container Styles */
+.form-container {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Adjust the gap between categories */
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Form Input Styles */
+.form-input {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  background-color: #ecf0f1;
+  color: #333;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+/* Placeholder Color */
+::placeholder {
+  color: #999;
 }

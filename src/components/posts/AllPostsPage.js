@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const AllPostsPage = () => {
     const [posts, setPosts] = useState([]);
@@ -15,7 +16,7 @@ export const AllPostsPage = () => {
             <article className="Posts">
                 {posts.map((post) => (
                     <section className="post" key={`post--${post.id}`}>
-                        <header>{post.title}</header>
+                        <Link to={`/posts/${post.id}`}>{post.title}</Link>
                         <div>{post.user.first_name}</div>
                         <div>{post.user.last_name}</div>
                         <div>{post.category}</div>

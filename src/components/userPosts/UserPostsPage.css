@@ -1,0 +1,42 @@
+.UserPostsPage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.PageTitle {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.PostsContainer {
+    display: grid;
+    gap: 20px;
+}
+
+.Post {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.PostTitle {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.UserInfo {
+    margin-bottom: 10px;
+}
+
+.UserName {
+    color: #666;
+}
+
+.Category {
+    color: #888;
+}
