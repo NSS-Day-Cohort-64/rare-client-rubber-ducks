@@ -1,62 +1,134 @@
+/* Base styles */
 
-
-
-.categories {
+.category-body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00A5A0;
+    margin-top: -1%;
+  }
+  
+  /* Category section */
+  
+  .category-section {
+    background-color: #00A699;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .category-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555; /* Adjust text color */
+    text-transform: uppercase; /* Uppercase text */
+  }
+  
+  .category-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  /* Container */
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Categories */
+  
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .category {
+    background-color: burlywood; /* Pale gold */
+    border-radius: 8px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Adjust the gap between categories */
-}
-
-.category {
-    border: 1px solid #ccc;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px; /* Adjust the gap between elements within a category */
-}
-
-.category-content {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.category-buttons {
-    display: flex;
-    gap: 5px;
-}
-
-.edit-button,
-.delete-button {
-    padding: 5px 10px;
-    background-color: #007bff;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons */
+  
+  .edit-button {
+    background-color: #27ae60;
     color: #fff;
     border: none;
+    padding: 8px 12px;
     cursor: pointer;
-}
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #219653;
+  }
 
-.edit-button:hover,
-.delete-button:hover {
-    background-color: #0056b3;
-}
 
-/* Other styling for your headings and links */
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
+  .delete-button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #219653;
+  }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-a {
-    text-decoration: none;
-    color: #333;
-}
+  
+  .add-button {
+    background-color: #27ae60; /* Green */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+  }
+  
+  .add-button:hover {
+    background-color: #219653; /* Darker green on hover */
+    transform: translateY(-2px);
+  }
+  
+  /* Search form */
+  
+  .category-form-search {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 5%;
+  }
+  
+  .form-search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .category-form {
 
-a:hover {
-    text-decoration: underline;
-}
+  }
+  

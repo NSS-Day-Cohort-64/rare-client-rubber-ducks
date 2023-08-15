@@ -16,7 +16,6 @@ export const ApplicationViews = ({ token, setToken }) => {
       <Route path="/categories" element={<AllCategories setToken={setToken} />}  />
       <Route element={<Authorized token={token} />} />
       <Route path="/tags" element={<AllTags setToken={setToken} />}/>
-      </Route>
     </Routes>
   </>
 }
