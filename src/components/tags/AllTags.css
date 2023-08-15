@@ -8,48 +8,57 @@
 }
 
 /* Heading Styles */
-h2 {
+.pageTitle {
   color: #2c3e50;
   font-size: 32px;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.mytag-content .tags {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 /* Tags Content Styles */
-.tags-content {
+.mytag-content {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Tag Styles */
-.tag {
+.mytag {
+  display: flex;
+  align-items: center;
   position: relative;
-  background-color: #ecf0f1;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.tag:hover {
+.mytag-label:hover {
   transform: translateY(-5px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.tag-label {
+.mytag-label {
+  width: 300px;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   font-size: 24px;
   color: #2980b9;
+  background-color: #ecf0f1;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Buttons Container Styles */
-.buttons {
+.tags .buttons {
+  flex-wrap: nowrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
 }
 
 /* Button Styles */
@@ -65,17 +74,17 @@ h2 {
   outline: none;
 }
 
-.edit-button {
+.button.edit-button {
   background-color: #27ae60;
   color: white;
 }
 
-.delete-button {
+.button.delete-button {
   background-color: #e74c3c;
   color: white;
 }
 
-.add-button {
+.button.add-button {
   background-color: #f39c12;
   color: white;
 }
@@ -112,94 +121,3 @@ h2 {
 ::placeholder {
   color: #999;
 }
-
-
-
-
-
-/* .Tags {
-  display: flex;
-  flex-direction: column;
-}
-
-.tag {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 10px;
-  background-color: white;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.tag ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.buttons {
-  margin-left: auto;
-}
-
-.edit-button,
-.delete-button {
-  margin-left: 10px;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.edit-button {
-  background-color: orange;
-  color: white;
-}
-
-.delete-button {
-  background-color: red;
-  color: white;
-}
-
-.add-button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: green;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.add-button:hover,
-.edit-button:hover,
-.delete-button:hover {
-  background-color: darkgreen;
-}
-
-form {
-  margin-top: 20px;
-}
-
-input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-input::placeholder {
-  color: #ccc;
-}
-
-h2 {
-  color: green;
-}
-
-.Tags-Content {
-  margin-top: 20px;
-} */
-
-/* Add any other styles you may need */

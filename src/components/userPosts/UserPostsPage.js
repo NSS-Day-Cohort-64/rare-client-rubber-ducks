@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./UserPostsPage.css"
+import { Link } from "react-router-dom";
 
 export const UserPostsPage = () => {
     const [posts, setPosts] = useState([]);
@@ -18,7 +19,7 @@ export const UserPostsPage = () => {
                 <div className="PostsContainer">
                     {posts.map((post) => (
                         <div className="Post" key={`post--${post.id}`}>
-                            <header className="PostTitle">{post.title}</header>
+                            <Link to={`/posts/${post.id}`} className="postTitle">{post.title}</Link>
                             <div className="UserInfo">
                                 <div className="UserName">
                                     {post.user.first_name} {post.user.last_name}

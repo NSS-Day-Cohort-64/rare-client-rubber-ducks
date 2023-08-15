@@ -6,6 +6,7 @@ import { AllTags } from "../components/tags/AllTags"
 import { AllPostsPage } from "../components/posts/AllPostsPage"
 import { AllCategories } from "../components/categories/AllCategories"
 import { UserPostsPage } from "../components/userPosts/UserPostsPage"
+import { PostDetails } from "../components/posts/PostDetails"
 
 export const ApplicationViews = ({ token, setToken }) => {
   return <>
@@ -16,8 +17,8 @@ export const ApplicationViews = ({ token, setToken }) => {
       <Route path="/categories" element={<AllCategories />}  />
       <Route path="/tags" element={<AllTags />}  />
       <Route path="/userPosts" element={<UserPostsPage />}  />
+      <Route path="/posts/:postId" element={<PostDetails />} />
       <Route element={<Authorized token={token} />}/>
-        {/* Add Routes here */}
     </Routes>
   </>
 }

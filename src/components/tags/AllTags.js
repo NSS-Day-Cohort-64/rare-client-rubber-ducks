@@ -36,29 +36,29 @@ export const AllTags = () => {
 
     return (
         <>
-            <div class="container">
-                <h2>Tags</h2>
-                <div class="tags-content">
-                    <article class="tags">
+            <h2 className="pageTitle">Tags</h2>
+            <div className="container">
+                <div className="mytag-content">
+                    <article className="tags">
                         {tags.slice().sort((a, b) => a.label.localeCompare(b.label)).map((tag) => (
-                            <section class="tag" key={`tag--${tag.id}`}>
-                                <div class="tag-label">{tag.label}</div>
-                                <div class="buttons">
-                                    <button class="button edit-button">Edit</button>
-                                    <button class="button delete-button">Delete</button>
+                            <section className="mytag" key={`tag--${tag.id}`}>
+                                <div className="mytag-label">{tag.label}</div>
+                                <div className="buttons">
+                                    <button className="button edit-button">Edit</button>
+                                    <button className="button delete-button">Delete</button>
                                 </div>
                             </section>
                         ))}
                     </article>
 
-                    <form class="form-container">
+                    <form className="form-container">
                         <input
-                            class="form-input"
+                            className="form-input"
                             value={input}
                             placeholder="Insert Tag Name"
                             onChange={(e) => setInput(e.target.value)}
                         />
-                        <button class="button add-button" onClick={(e) => addTag(e)}>
+                        <button className="button add-button" onClick={(e) => addTag(e)}>
                             Create
                         </button>
                     </form>
